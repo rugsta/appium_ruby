@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'selenium-client'
+gem 'selenium-webdriver', '2.47.1'
+gem 'rspec'
+gem 'touch_action'
+gem 'appium_lib'
+gem 'appium_console'
+gem 'awesome_print'
+gem 'pry'
+gem 'appium_capybara'
