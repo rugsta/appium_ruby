@@ -12,7 +12,7 @@ describe 'Search and pds functionality checks' do
     it 'searches and checks PDS page options', js: true do
       navBarClick("Search")
   
-      searchRequest("buy", "Errinundra, VIC 3889")
+      searchRequest("buy", "Suburb, VIC 3889")
       getResultsAndClick(2)
   
       pdsMortgageCalculatorView
@@ -30,7 +30,7 @@ describe 'Search and pds functionality checks' do
     it 'searches and checks buy, rent, sold recent searches', js: true do
       navBarClick("Search")
  
-      searchRequest("Buy", "Errinundra, VIC 3889")
+      searchRequest("Buy", "Suburb, VIC 3889")
       buttonClick("Back")
  
       searchRequest("Rent", "Mentone, VIC 3194")
@@ -39,7 +39,7 @@ describe 'Search and pds functionality checks' do
       searchRequest("Sold", "Newport, VIC 3015")
       buttonClick("Back")
  
-      recentSearchEntered = ["Newport, VIC, filtered by Sold, $ Any", "Mentone, VIC, filtered by Rent, $ Any", "Errinundra, VIC, filtered by Buy, $ Any"]
+      recentSearchEntered = ["Newport, VIC, filtered by Sold, $ Any", "Mentone, VIC, filtered by Rent, $ Any", "Suburb, VIC, filtered by Buy, $ Any"]
       recentSearchCheck(recentSearchEntered)
  
       quit
@@ -49,7 +49,7 @@ describe 'Search and pds functionality checks' do
     it 'searches and saves a property', js: true do
       navBarClick("Search")
   
-      searchRequest("buy", "Errinundra, VIC 3889")
+      searchRequest("buy", "Suburb, VIC 3889")
       getResultsAndClick(2)
   
       pdsRequestLoginCheck
