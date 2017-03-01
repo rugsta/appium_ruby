@@ -15,7 +15,7 @@ def setup
     :platformName => "ios",
     :platformVersion => "9.3",
     :deviceName => "iPhone Simulator",
-    :app => "/Users/sandy.cook/Library/Developer/Xcode/DerivedData/mobile-core-ios-cnrmrivcaoaajxgdumqyiezbierq/Build/Products/Debug-iphonesimulator/RESI-Internal.app",
+    :app => "/Users/sandy.cook/Library/Developer/Xcode/Myapp.app",
     :autoAcceptAlerts => true
   }
   
